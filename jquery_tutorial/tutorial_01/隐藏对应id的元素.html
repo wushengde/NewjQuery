@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>隐藏对应ID的元素</title>
+	<script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("button").click(function(){
+				$("p#3").hide();
+			});
+		});
+	</script>
+</head>
+<body>
+	<p id="1">第一段</p>
+	<p id="2">第二段</p>
+	<p id="3">第三段</p>
+	<button type="button">点我隐藏第三段</button>
+</body>
+</html>

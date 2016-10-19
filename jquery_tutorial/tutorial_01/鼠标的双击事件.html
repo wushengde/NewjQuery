@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鼠标的双击事件</title>
+	<script type="text/javascript" src="../../js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("button#btna").dblclick(function(){
+				$("p").css("background-color","blue");
+			});
+			$("input:button").click(function(){
+				$(":text").val("hello kitty !");
+			});
+			$("button#btn").click(function(){
+				alert("text的背景色是"+$("p").attr("background-color"));
+			});
+		});
+	</script>
+</head>
+<body>
+	<p>双击下面的按钮改变此段落的样式。</p>
+	<input type="text" value="hello world !" /><br/><br/>
+	<input type="button" value="单击改变文本框中的值"/><br><br/>
+	<button type="button" id="btna">双击改变段落样式</button><br/><br/>
+	<button type="button" id="btn">单击返回段落的背景色</button>
+</body>
+</html>

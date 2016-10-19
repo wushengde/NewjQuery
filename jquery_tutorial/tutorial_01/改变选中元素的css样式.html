@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>改变选中元素的CSS样式</title>
+	<script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("button").click(function(){
+				$("P.content").css(
+					"background-color","green"
+				);
+			});
+		});
+	</script>
+</head>
+<body>
+	<p class="content">这是一个段落，点击下面的按钮将会改变该段落的CSS样式。</p>
+	<button type="button">点击我改变段落样式</button>
+</body>
+</html>
