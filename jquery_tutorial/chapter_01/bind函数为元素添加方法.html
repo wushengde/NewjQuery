@@ -5,10 +5,16 @@
 	<title>bind函数为元素添加方法</title>
 	<script type="text/javascript" src="../../js/jquery-1.12.3.min.js"></script>
 	<script type="text/javascript">
-		
+		var jq=jQuery.noConflict();
+		jq(document).ready(function() {
+			jq("button").bind("click",function(){
+				jq("p").slideToggle();
+			});
+		});
 	</script>
 </head>
 <body>
-	
+	<p>This is a paragraph.</p>
+	<button type="button">请点击这里。</button>
 </body>
 </html>

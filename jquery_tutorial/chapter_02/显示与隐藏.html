@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>显示与隐藏效果</title>
+	<script type="text/javascript" src="../../js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#hide").click(function(){
+				$("p").hide();
+			});
+			$("#show").click(function(){
+				$("p").show();
+			});
+		});
+	</script>
+</head>
+<body>
+	<p>点击下面的两个按钮，实现隐藏与显示。</p>
+	<input id="hide" type="button" value="隐藏" />
+	<input id="show" type="button" value="显示" />
+</body>
+</html>
